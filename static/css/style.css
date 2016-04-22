@@ -6,6 +6,9 @@ body{
 
 h1{
 	font-size: xx-large;
+	text-align: center;
+	margin-bottom: 20px;
+	margin-left: -65px;
 
 }
 
@@ -31,49 +34,38 @@ h3{
 	border-radius: 15px 15px 3px 3px;
 	text-shadow: 0px 0px #FFFFFF;
 }
-#zahlavi {
-	background-image: url(/static/obrazky/kook.jpg);
-	height: 228px;
-	opacity: 0.68;
-	color: #6D4C65;
-	text-align: left;
-	border-top-right-radius: 15px;
-	border-top-left-radius: 15px;
-	padding-top: 7px;
-	font-size: xx-large;
-	text-shadow: 3px 4px #EBBEE7;
-	padding-left: 148px;
-	text-indent: 0px;
+.zahlavi {
+	width: 960px;
+	margin-top: 20px;
+	margin-bottom: 10px;
+	font-size: 100px;
+	text-transform: uppercase;
+	color: #9900cc;
+	text-shadow: 0px 0px 3px #270033;
 
 }
 #podzahlavi{
-	margin-top: -23px;
+	margin-top: 5px;
 	text-align: center;
 	border-color: #DDBB98 #DDBB98 #C8925A;
 	background-color: #D6C7B4;
 	height: 43px;
 	border-bottom-style: solid;
 	color: #735A6F;
-	
-	}
-	
-#kosik{
-	width: 134px;
-	height: 50px;
-	margin-top: -64px;
-	clear: right;
-	float: right;
-	text-align: center;
-	text-decoration: underline;
-	
-	}
+	list-style-image: none;
+
+}
+
+
 #login{
-	margin-top: -64px;
+	margin-top: -5px;
 	width: 127px;
 	height: 34px;
 	float: right;
-	margin-right: 112px;
+	margin-right: 20px;
 	text-decoration: underline;
+	text-align: right;
+	list-style-image: none;
 	
 	}
 a {
@@ -86,13 +78,26 @@ a:hover, a:active, a:focus {
 	color: #641C59;
 	text-decoration: underline;
 }
-#galerie{
-	margin-top: 24px;
-	clear: right;
-	float: right;
-	margin-right: 36px;
-	margin-bottom: 15px;
-	}
+
+.hlavni {width: 960px;height: 500px;}
+.hlavni .left_menu {width: 150px;height: 500px;float:left; }
+.hlavni .left_menu .part  {
+	width: 150px;
+	height: 240px;
+	list-style-type: none;
+	text-shadow: 0px 0px 6px #000000;
+}
+.hlavni .left_menu ul {
+	list-style-type: none;
+	height: auto;
+	margin-top: 10px;
+}
+.hlavni .left_menu ul li {
+	padding-top: 4px;
+	padding-bottom: 5px;
+	margin-top: 7px;
+	background-color: #6FB14A;
+}
 
 #zapati {
 	height: 26px;

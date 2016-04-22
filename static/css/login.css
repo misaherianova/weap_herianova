@@ -1,0 +1,31 @@
+* {
+margin: 0 auto;
+padding: 0px;
+}
+body {
+	text-align: center;
+	background-color:#D6C7B4;
+}
+.login{
+	width: 450px;
+	height: 150px;
+	margin-top: 250px;
+	background-color: #F2E1F4;
+
+}
+.action {
+padding-top: 20px;
+}
+.nick, .pass{
+	margin-top: 10px;
+
+
+
+}
+.submit{
+	margin-top: 10px;
+	padding-left: 50px;
+	padding-right: 50px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
