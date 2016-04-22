@@ -1,0 +1,104 @@
+@charset "utf-8";
+body{
+	background-color: #F3EDDD;
+	
+	}
+
+h1{
+	font-size: xx-large;
+
+}
+
+
+h2{
+	font-size: xx-large;
+
+}
+
+
+h3{
+	font-size: large;
+}
+#divCelek {
+	background-color: #F2E1F4;
+	padding-top: 20px;
+	padding-right: 20px;
+	padding-left: 20px;
+	padding-bottom: 20px;
+	width: 800px;
+	margin-right: auto;
+	margin-left: auto;
+	border-radius: 15px 15px 3px 3px;
+	text-shadow: 0px 0px #FFFFFF;
+}
+#zahlavi {
+	background-image: url(/static/obrazky/kook.jpg);
+	height: 228px;
+	opacity: 0.68;
+	color: #6D4C65;
+	text-align: left;
+	border-top-right-radius: 15px;
+	border-top-left-radius: 15px;
+	padding-top: 7px;
+	font-size: xx-large;
+	text-shadow: 3px 4px #EBBEE7;
+	padding-left: 148px;
+	text-indent: 0px;
+
+}
+#podzahlavi{
+	margin-top: -23px;
+	text-align: center;
+	border-color: #DDBB98 #DDBB98 #C8925A;
+	background-color: #D6C7B4;
+	height: 43px;
+	border-bottom-style: solid;
+	color: #735A6F;
+	
+	}
+	
+#kosik{
+	width: 134px;
+	height: 50px;
+	margin-top: -64px;
+	clear: right;
+	float: right;
+	text-align: center;
+	text-decoration: underline;
+	
+	}
+#login{
+	margin-top: -64px;
+	width: 127px;
+	height: 34px;
+	float: right;
+	margin-right: 112px;
+	text-decoration: underline;
+	
+	}
+a {
+}
+a:link {
+	color: #C271B9;
+}
+
+a:hover, a:active, a:focus {
+	color: #641C59;
+	text-decoration: underline;
+}
+#galerie{
+	margin-top: 24px;
+	clear: right;
+	float: right;
+	margin-right: 36px;
+	margin-bottom: 15px;
+	}
+
+#zapati {
+	height: 26px;
+	clear: both;
+	margin-top: 19px;
+}
+
+
+
