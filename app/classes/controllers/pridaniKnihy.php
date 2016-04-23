@@ -16,22 +16,15 @@ class pridaniKnihy extends Controller
 	public function __construct()
 	{
 		$this->setTemplate('app\templates\administrace_temp');
+		$this->openDatabaseConnection();
 		
 	}
 
 	public function index()
 	{
-		$this->template->set('title', 'semestralni_prace');
 		$this->template->set('content', '<h1>Administrace</h1>');
-		$this->template->set('zahlavi', '<div class="zahlavi"><p>ADMINISTRACE</p></div>');
-		$this->template->set('topmenu', ' 
-        <a href="index.php?url=home">ESHOP</a> |
-        <a href="index.php?url=pridaniKnihy">Pridat knihu</a> |
-        <a href="index.php?page=book_edit">Upavit knihu</a> |
-        <a href="index.php?page=orders">Ostatni</a> |
-        <a href="index.php?page=logout">Odhlasit se</a>');
 
-		$knihy = new AdministraceKnih($this->openDatabaseConnection());
+		$knihy = new AdministraceKnih($this->db);
 
 		if (isset($_POST["jmeno"]) && isset($_POST["autor"])&& isset($_POST["popis"])&&
 			isset($_POST["cena"]) && isset($_POST["kategorie"]))
@@ -43,9 +36,7 @@ class pridaniKnihy extends Controller
 			$kategorie = $_POST['kategorie'];
 			$knihy->pridatKnihu($jmeno, $autor, $popis, $cena, $kategorie);
 
-			echo $jmeno;
-			echo " tohle mi to naslo";
-			$this->redirect("administrace/index");
+			//$this->redirect("administrace/index");
 		}
 		else {
 			$user = null;

@@ -34,6 +34,7 @@ class vratZDatabaze
 
 	public static function query($db, $sql)
 	{
+
 		$db->query($sql);
 	}
 }

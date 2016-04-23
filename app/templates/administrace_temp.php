@@ -16,7 +16,7 @@ if(!defined('BASE_DIR')) die('no direct script acess'); ?>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title><?php echo $title;?></title>
+    <title>semestralni_prace</title>
 
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
@@ -29,11 +29,15 @@ if(!defined('BASE_DIR')) die('no direct script acess'); ?>
 <body>
 <div id="divCelek">
     <header id="zahlavi">
-        <h1>  <?php echo $zahlavi; ?>  </h1>
+        <p>ADMINISTRACE</p>
     </header>
     
     <div class="topmenu">
-        <?php echo $topmenu; ?>
+        <a href="index.php?url=home">ESHOP</a> |
+        <a href="index.php?url=pridaniKnihy">Pridat knihu</a> |
+        <a href="index.php?page=book_edit">Upavit knihu</a> |
+        <a href="index.php?url=odebraniKnihy">Odebrat knihu</a> |
+        <a href="index.php?page=logout">Odhlasit se</a>
     </div>
 
     <main id="hlavni">

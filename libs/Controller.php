@@ -31,7 +31,6 @@ class Controller
      */
     protected function openDatabaseConnection()
     {
-        //PDO options - tohle vubec netusim co to je ? nejaky naplneni pole asi / co je to PDO
         $options = array(
             PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_OBJ,
             PDO::ATTR_ERRMODE => PDO::ERRMODE_WARNING,

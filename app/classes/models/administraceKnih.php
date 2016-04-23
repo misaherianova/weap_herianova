@@ -29,19 +29,19 @@ class AdministraceKnih{
     {
         $sql = "INSERT INTO knihy (autor, nazev, popis, cena, kategorie) 
                 VALUES ('$autor', '$nazev', '$popis', '$cena', '$kategorie')";
-        DbTools::query($this->db, $sql);
+        vratZDatabaze::query($this->db, $sql);
     }
 
     public function odstranitKnihu($id)
     {
         $sql = "DELETE FROM knihy WHERE id='$id'";
-        DbTools::query($this->db, $sql);
+        vratZDatabaze::query($this->db, $sql);
     }
 
     public function getBooks()
     {
         $sql = "SELECT * FROM knihy";
-        return DbTools::queryReturnAll($this->db, $sql);
+        return vratZDatabaze::vratVse($this->db, $sql);
     }
 
 }
