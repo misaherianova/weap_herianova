@@ -6,7 +6,7 @@ RewriteEngine On
 Options -Indexes
 
 # zakladni adresa pro prepisovani. Je potreba pokud aplikaci mame v podadresari.
-RewriteBase /weap/
+RewriteBase /weap_semestralka/
 
 # Prepisovaci podminky
 # viz: http://httpd.apache.org/docs/2.2/mod/mod_rewrite.html#rewritecond

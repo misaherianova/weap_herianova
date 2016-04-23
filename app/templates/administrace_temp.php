@@ -27,25 +27,20 @@ if(!defined('BASE_DIR')) die('no direct script acess'); ?>
 </head>
 
 <body>
-<div class="wrapper">
-    <div class="zahlavi">
-        <p>ADMINISTRACE</p>
-    </div>
+<div id="divCelek">
+    <header id="zahlavi">
+        <h1>  <?php echo $zahlavi; ?>  </h1>
+    </header>
+    
     <div class="topmenu">
-        <a href="../../administrace/index.php?page=uvodni">ESHOP</a> |
-        <a href="index.php?page=book_add">Pridat knihu</a> |
-        <a href="index.php?page=book_edit">Upavit knihu</a> |
-        <a href="index.php?page=orders">Ostatni</a> |
-        <a href="index.php?page=logout">Odhlasit se</a>
+        <?php echo $topmenu; ?>
     </div>
-    <div class="middle">
-        <div class="content">
-            <?php echo $content; ?>
-        </div>
-    </div>
-    <div class="footer">
-        <p>Michaela Herianová semestrální práce WEAP</p>
-    </div>
+
+    <main id="hlavni">
+        <?php echo $content;?>
+    </main>
+
+    <footer id="zapati">Michaela Herianová semestrální práce WEAP</footer>
 </div>
 </body>
 </html>

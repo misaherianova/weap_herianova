@@ -25,7 +25,7 @@ class Knihy{
     }
 
     /**
-     * vsechny clanky z databaze
+     * vsechny knihy z databaze
      * nepouzivame parametr => neni potreba pouzit prepared statements
      * @return array of objects
      */
@@ -36,7 +36,7 @@ class Knihy{
     }
 
     /**
-     * clanek s konkretnim id
+     * kniha s konkretnim id
      * @param string url id z databaze
      * @return object clanek
      */

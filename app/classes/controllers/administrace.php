@@ -14,10 +14,12 @@ namespace app\classes\controllers;
 use libs\Controller;
 use libs\View;
 
-class Home extends Controller {
+if(!defined('BASE_DIR')) die('no direct script access');
+
+class Administrace extends Controller {
 
     public function __construct() {
-        $this->setTemplate('app/templates/default');
+        $this->setTemplate('app/templates/administrace_temp');
     }
 
     /**
@@ -27,18 +29,15 @@ class Home extends Controller {
 
     public function index() {
         $this->template->set('title', 'semestralni_prace');
-        $this->template->set('content', '<h1>Uvodni stranka</h1>');
-        $this->template->set('zahlavi', '<div class="zahlavi"><p>ESHOP</p></div>');
-        $this->template->set('navKategorie', '<ul>
-		<li><a href=index.php?page=content/books&menu=1>Romanticke</a></li>
-        <li><a href=index.php?page=content/books&menu=2>Sci-fy</a></li>
-        <li><a href=index.php?page=content/books&menu=3>Motivacni literatura</a></li>
-        <li><a href=index.php?page=content/books&menu=4>Historicke</a></li>
-        <li><a href=index.php?page=content/books&menu=5>Vedecke</a></li>
-        <li><a href=index.php?page=content/books&menu=6>Pro deti</a></li>
-	</ul>');
-
-        $this->template->set('administrace', '<ul><li><a href=\'index.php?url=administrace\'>administrace</a></li></ul>');
+        $this->template->set('content', '<h1>Administrace</h1>');
+        $this->template->set('zahlavi', '<div class="zahlavi"><p>ADMINISTRACE</p></div>');
+        $this->template->set('topmenu', ' 
+        <a href="index.php?url=home">ESHOP</a> |
+        <a href="index.php?url=pridaniKnihy">Pridat knihu</a> |
+        <a href="index.php?page=book_edit">Upavit knihu</a> |
+        <a href="index.php?url=odebraniKnihy">Odebrat knihu</a> |
+        <a href="index.php?page=logout">Odhlasit se</a>');
+        
         echo $this->template->render();
 
     }

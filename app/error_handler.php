@@ -3,6 +3,7 @@ namespace app;
 use ErrorException;
 use Exception;
 
+//zatim jen jako inspirace pro dalsi praci
 
 /**
 * Error handler, passes flow over the exception logger with new ErrorException.
