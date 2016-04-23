@@ -7,12 +7,10 @@
 namespace app\classes\controllers;
 
 /*
-* Home controller 
-* ukazka pouziti View
+* controller pro administraci -> jeste uvidim jestli je nutny
 */
 
 use libs\Controller;
-use libs\View;
 
 if(!defined('BASE_DIR')) die('no direct script access');
 
@@ -22,47 +20,10 @@ class Administrace extends Controller {
         $this->setTemplate('app/templates/administrace_temp');
     }
 
-    /**
-     * zakladni metoda controlleru
-     * -> kam dat html kody?
-     */
 
     public function index() {
         $this->template->set('content', '<h1>Administrace</h1>');
         
-        echo $this->template->render();
-
-    }
-
-    /**
-     * akce demo - zobrazi predane parametry
-     * @param null $params
-     * @throws \Exception
-     */
-    public function demo($params = null) {
-
-        $this->template->set('title', 'vypis parametru na obrazovku');
-
-        $content = new View('app/views/params');
-        $content->set('data', $params);
-        $this->template->set('content', $content->render());
-
-        echo $this->template->render();
-
-    }
-
-    /**
-     * akce errordemo - ukazka chyby
-     * @param null $params
-     * @throws \Exception
-     */
-    public function errordemo() {
-
-        $this->template->set('title', 'vypis parametru na obrazovku');
-
-        $content = new View('app/views/nonexistingview');
-        $this->template->set('content', $content->render());
-
         echo $this->template->render();
 
     }

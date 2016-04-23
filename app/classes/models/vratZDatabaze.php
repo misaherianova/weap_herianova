@@ -32,9 +32,9 @@ class vratZDatabaze
 		return $db->query($sql);
 	}
 
+	//zkusit vic pochopit query
 	public static function query($db, $sql)
 	{
-
 		$db->query($sql);
 	}
 }

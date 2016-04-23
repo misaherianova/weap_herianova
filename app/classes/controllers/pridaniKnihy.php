@@ -35,16 +35,13 @@ class pridaniKnihy extends Controller
 			$cena = $_POST['cena'];
 			$kategorie = $_POST['kategorie'];
 			$knihy->pridatKnihu($jmeno, $autor, $popis, $cena, $kategorie);
-
-			//$this->redirect("administrace/index");
 		}
 		else {
 			$user = null;
 			echo "nepodarilo se";
 		}
 
-
-		//poresit proc to bez toho nefunguje
+		//poresit proc to bez toho nefunguje? -> doresit predavani parametru u odeslani
 		$content = new View('app/views/pridatKnihu');
 		$this->template->content = $content->render();
 		echo $this->template->render();

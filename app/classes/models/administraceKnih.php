@@ -38,6 +38,11 @@ class AdministraceKnih{
         vratZDatabaze::query($this->db, $sql);
     }
 
+    // -> co se vse bude predavat? 
+    public function upravKnihu(){
+
+    }
+
     public function getBooks()
     {
         $sql = "SELECT * FROM knihy";

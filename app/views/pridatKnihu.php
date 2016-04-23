@@ -1,6 +1,4 @@
-<?php  if(!defined('BASE_DIR')) die('no direct script access');
-
-?>
+<?php  if(!defined('BASE_DIR')) die('no direct script access'); ?>
 
 
 

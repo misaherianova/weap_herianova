@@ -3,7 +3,6 @@ namespace app\classes\controllers;
 
 /**
  * Knihy controller
- * ukazka pouziti modelu
  */
 use libs\Controller;
 use libs\View;
@@ -19,7 +18,7 @@ class Knihy extends Controller {
     }
 
     /**
-     * metoda pro vypis vech clanku
+     * metoda pro vypis vech knih
      */
 
     public function index() {
@@ -36,9 +35,9 @@ class Knihy extends Controller {
 
     /*
     * metoda pro vypis konkretniho clanku
-    * ukazuje ze pro slozitejsi projekty je dobre mit propracovanejsi smerovani ve front controlleru
+    * (ukazuje ze pro slozitejsi projekty je dobre mit propracovanejsi smerovani ve front controlleru
     * pokud by chyby zpracoval jiz router a dale predaval pouze jeden validni parametr mohl by kod zde
-    * byt o neco kratsi
+    * byt o neco kratsi)
     */
     public function show($params = null) {
         $knihy = new \app\classes\models\ Knihy($this->db);

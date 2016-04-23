@@ -5,9 +5,7 @@ use PDO;
 
 if(!defined('BASE_DIR')) die('no direct script access');
 
-/*
-* Model pro clanky
-*/
+
 
 class Knihy{
 

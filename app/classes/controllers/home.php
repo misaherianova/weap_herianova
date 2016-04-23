@@ -6,10 +6,6 @@
 
 namespace app\classes\controllers;
 
-/*
-* Home controller 
-* ukazka pouziti View
-*/
 
 use libs\Controller;
 use libs\View;
@@ -22,7 +18,6 @@ class Home extends Controller {
 
     /**
      * zakladni metoda controlleru
-     * -> kam dat html kody?
      */
 
     public function index() {
