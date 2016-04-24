@@ -1,0 +1,18 @@
+
+{
+
+    "host": "localhost",
+    "db_type": "mysql",
+    "db_name": "misawe1461503257",
+    "db_user": "misawe1461503257",
+    "db_pass": "vDpZiZT"
+
+
+    /*
+    "host": "127.0.0.1",
+    "db_type": "mysql",
+    "db_name": "database_eshop",
+    "db_user": "root",
+    "db_pass": ""
+*/
+}
